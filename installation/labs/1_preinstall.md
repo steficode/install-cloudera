@@ -18,7 +18,7 @@ sudo vim /etc/hosts
 172.31.120.161 stf-btc-20171030-5
 ```
 
-*Verify all the machines accessibles and well provisionned***
+**Verify all the machines accessibles and well provisionned**
 ```
 for host in stf-btc-20171030-1 stf-btc-20171030-2 stf-btc-20171030-3 stf-btc-20171030-4 stf-btc-20171030-5
 do 
@@ -63,7 +63,7 @@ PING stf-btc-20171030-5 (172.31.120.161): 56 data bytes
 round-trip min/avg/max/stddev = 51.307/51.429/51.551/0.122 ms
 ```
 
-**Adjust vm.swpiness on all nodes**
+**Adjust vm.swpiness on all nodes** \n
 The parameter is to modify in this file : 
 ```
 vim /etc/sysctl.conf
@@ -110,7 +110,7 @@ tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=1333664k,mode=700
 
 ```
 
-***Verify is EXT volumes exists or XFS for example***
+**Verify is EXT volumes exists or XFS for example**
 ```
 [root@stf-btc-20171030-1 ~]#  mount -ls | grep ext
 [root@stf-btc-20171030-1 ~]#  mount -ls | grep xfs
