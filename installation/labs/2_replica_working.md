@@ -335,7 +335,7 @@ grant all on rman.* TO 'navms'@'stf-btc-20171030-1' IDENTIFIED BY 'navms_passwor
 > Installing MariaDB Server for replications on the host: stf-btc-20171030-2 as described for the master node (stf-btc-20171030-1)
 > On the replica server / configure the connection to the master / Repeat the steps to secure the connection 
 
-````
+```
 MariaDB [(none)]> SET GLOBAL binlog_format = 'ROW';
 
 MariaDB [(none)]>  FLUSH TABLES WITH READ LOCK;
