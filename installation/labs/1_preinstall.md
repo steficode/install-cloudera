@@ -75,7 +75,7 @@ vm.swappiness = 1
 ```
 
 **Show the mount attributes of the volumes**
-To verify on all nodes
+> To verify on all nodes
 ```
 stf-btc-20171030-1 : 
 mount -ls 
@@ -197,6 +197,5 @@ Oct 30 13:15:28 stf-btc-20171030-1.gce.cloudera.com ntpd[1688]: 0.0.0.0 c011 01 
 Oct 30 13:15:29 stf-btc-20171030-1.gce.cloudera.com ntpd[1688]: 0.0.0.0 c614 04 freq_mode
 Oct 30 13:36:16 stf-btc-20171030-1.gce.cloudera.com ntpd[1688]: 0.0.0.0 0612 02 freq_set kernel 31.752 PPM
 Oct 30 13:36:16 stf-btc-20171030-1.gce.cloudera.com ntpd[1688]: 0.0.0.0 0615 05 clock_sync
-[root@stf-btc-20171030-1 network-scripts]#
 ```
 
