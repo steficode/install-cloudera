@@ -74,6 +74,16 @@ vim /etc/sysctl.conf
 vm.swappiness = 1
 ```
 
+**Verify th value for swappiness on each node**
+```
+[root@stf-btc-20171030-1 ~]# cat /proc/sys/vm/swappiness
+0
+````
+**Set NOATIME**
+````
+N/A
+````
+
 **Show the mount attributes of the volumes**
 > To verify on all nodes
 ```
