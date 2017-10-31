@@ -1,7 +1,7 @@
 **Installing MariaBD Server**
 > The installation will be done on the node: stf-btc-20171030-1.gce.cloudera.com considered as a master database server
 
-````
+```
 [root@stf-btc-20171030-1 network-scripts]# sudo yum install mariadb-server
 Failed to set locale, defaulting to C
 Loaded plugins: fastestmirror
@@ -109,7 +109,7 @@ Dependency Updated:
   mariadb-libs.x86_64 1:5.5.56-2.el7
 
 Complete!
-````
+```
 
 
 **Configuring & Starting MariaDB Server**
@@ -166,7 +166,7 @@ Redirecting to /bin/systemctl stop  mariadb.service
 		pid-file=/var/run/mariadb/mariadb.pid
 
 
-````
+```
 **Enable MariaDB Server as a service**
 ```
 [root@stf-btc-20171030-1 mysql]#  sudo systemctl enable mariadb
@@ -396,6 +396,6 @@ ERROR: No query specified
 MariaDB [(none)]>
 ------------------------
 
-`` 
+``` 
 
 
