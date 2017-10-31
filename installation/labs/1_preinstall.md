@@ -1,4 +1,4 @@
-***My cluster provisionned from GCE***
+**My cluster provisionned from GCE**
 
 ```
 hostname					instance_name			ip
@@ -18,7 +18,7 @@ sudo vim /etc/hosts
 172.31.120.161 stf-btc-20171030-5
 ```
 
-***Verify all the machines accessibles and well provisionned***
+*Verify all the machines accessibles and well provisionned***
 ```
 for host in stf-btc-20171030-1 stf-btc-20171030-2 stf-btc-20171030-3 stf-btc-20171030-4 stf-btc-20171030-5
 do 
@@ -63,7 +63,7 @@ PING stf-btc-20171030-5 (172.31.120.161): 56 data bytes
 round-trip min/avg/max/stddev = 51.307/51.429/51.551/0.122 ms
 ```
 
-***Adjust vm.swpiness on all nodes***
+**Adjust vm.swpiness on all nodes**
 The parameter is to modify in this file : 
 ```
 vim /etc/sysctl.conf
@@ -74,7 +74,7 @@ vim /etc/sysctl.conf
 vm.swappiness = 1
 ```
 
-***Show the mount attributes of the volumes***
+**Show the mount attributes of the volumes**
 To verify on all nodes
 ```
 stf-btc-20171030-1 : 
@@ -117,7 +117,7 @@ tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=1333664k,mode=700
 /dev/sda1 on / type xfs (rw,relatime,attr2,inode64,noquota) [/]
 ``` 
 
-***Disable transparent hugepage support***
+**Disable transparent hugepage support**
 ```
 [root@stf-btc-20171030-1 ~]# defrag_file_pathname=/sys/kernel/mm/transparent_hugepage/defrag
 [root@stf-btc-20171030-1 ~]# echo $defrag_file_pathname
@@ -129,7 +129,7 @@ Add the following to /etc/rc.local to persist the change
 echo never > defrag_file_pathname
 ```
 
-***List your network interface configuration***
+**List your network interface configuration**
 ```
 [root@stf-btc-20171030-1 network-scripts]# ls -lart /etc/sysconfig/network-scripts/ifcfg*
 -rw-r--r--. 1 root root 254 Sep 16  2015 /etc/sysconfig/network-scripts/ifcfg-lo
@@ -138,7 +138,7 @@ echo never > defrag_file_pathname
 ```
 
 
-***Show that forward and reverse host lookups are correctly resolved***
+**Show that forward and reverse host lookups are correctly resolved**
 ```
 for host in stf-btc-20171030-1 stf-btc-20171030-2 stf-btc-20171030-3 stf-btc-20171030-4 stf-btc-20171030-5
 do
@@ -152,7 +152,7 @@ done;
 172.31.120.161  stf-btc-20171030-5.gce.cloudera.com
 ```
 
-***Checking if nscd service is running on each host***
+**Checking if nscd service is running on each host**
 ```
 [root@stf-btc-20171030-1 network-scripts]# service nscd status
 Redirecting to /bin/systemctl status  nscd.service
@@ -176,7 +176,7 @@ Oct 30 13:16:29 stf-btc-20171030-1.gce.cloudera.com nscd[3473]: 3473 checking fo
 
 ```
 
-***Checking if ntpd service is running on each host ***
+**Checking if ntpd service is running on each host**
 ```
 [root@stf-btc-20171030-1 network-scripts]# service ntpd status
 Redirecting to /bin/systemctl status  ntpd.service
