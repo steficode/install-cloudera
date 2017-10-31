@@ -63,7 +63,7 @@ PING stf-btc-20171030-5 (172.31.120.161): 56 data bytes
 round-trip min/avg/max/stddev = 51.307/51.429/51.551/0.122 ms
 ```
 
-**Adjust vm.swpiness on all nodes** \n
+**Adjust vm.swpiness on all nodes** '\n'
 The parameter is to modify in this file : 
 ```
 vim /etc/sysctl.conf
