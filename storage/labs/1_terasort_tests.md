@@ -1,5 +1,5 @@
 
-**Test HDFS throughput
+**Test HDFS throughput**
 
 >Create an end-user Linux with the gitHub handle 
 ```
@@ -22,7 +22,7 @@ drwxr-xr-x   - sclairville sclairville          0 2017-11-01 10:11 /user/sclairv
 drwxr-x--x   - spark       spark                0 2017-10-31 14:59 /user/spark
 ```
 
-**Create a 10 GB file using teragen
+**Create a 10 GB file using teragen**
 ```
 
 [root@stf-btc-20171030-1 ~]# sudo -u hdfs hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar teragen 102400000 /user/sclairville/teragen10G
