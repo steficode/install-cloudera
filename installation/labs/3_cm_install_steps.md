@@ -164,7 +164,4 @@ Starting cloudera-scm-server (via systemctl):              [  OK  ]
 **Remote Parcel Repository URL**
 ```
 5.9.3-1.cdh5.9.3.p0.4	
-
-
 ```
-
