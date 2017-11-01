@@ -142,6 +142,11 @@ drwxr-xr-x   - hdfs supergroup          0 2017-11-01 09:47 /tmp/stefun/teragen_f
 ```
 
 > Let the other use BDR
+```
+[root@stf-btc-20171030-1 ~]# hdfs dfs -mkdir -p /tmp/bdr
+
+see the screenshot 2_bdr_ok.png
+```
 
 
 > Browse the results
