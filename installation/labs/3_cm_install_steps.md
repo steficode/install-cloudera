@@ -108,7 +108,7 @@ Complete!
 ```
 [root@stf-btc-20171030-1 yum.repos.d]# python --version
 Python 2.7.5
-``
+```
 
 **Install JDBC Driver**
 ```
