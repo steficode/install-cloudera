@@ -167,6 +167,7 @@ Found 3 items
 [root@stf-btc-20171030-1 ~]# hdfs dfs -du -s /user/sclairville/teragen10G  | cut -d' ' -f1,2-10 | awk '{ sum=$1 ;
 > hum[1024**4]="Tb";hum[1024**3]="Gb";hum[1024**2]="Mb";hum[1024]="Kb"; for (x=1024**4; x>=1024; x/=1024){ if (sum>=x) { printf "%.2f %s \t %s\n",sum/x,hum[x],$2;break } }}'
 9.54 Gb 	 30720000000
+```
 
 > Delete the 10G File 
 ```
