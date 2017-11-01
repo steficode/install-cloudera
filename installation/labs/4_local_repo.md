@@ -48,7 +48,36 @@ HTTP/1.1 200 OK
 Date: Wed, 01 Nov 2017 05:17:35 GMT
 Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
 Content-Type: text/html;charset=ISO-8859-1
+```
+> Deploy the Spark2 local repo
 
 ```
+
+[root@stf-btc-20171030-1 ~]# mkdir -p /var/www/html/spark2
+[root@stf-btc-20171030-1 ~]# cd /tmp/
+
+[root@stf-btc-20171030-1 ~]# wget https://archive.cloudera.com/spark2/parcels/2/SPARK2-2.1.0.cloudera2-1.cdh5.7.0.p0.171658-el7.parcel 
+[root@stf-btc-20171030-1 ~]# wget https://archive.cloudera.com/spark2/parcels/latest/manifest.json
+
+[root@stf-btc-20171030-1 tmp]# mv SPARK2-2.1.0.cloudera2-1.cdh5.7.0.p0.171658-el7.parcel* /var/www/html/spark2/
+[root@stf-btc-20171030-1 tmp]# mv manifest.json /var/www/html/spark2/
+
+[root@stf-btc-20171030-1 tmp]# chmod -R ugo+r /var/www/html/spark2/*
+
+[root@stf-btc-20171030-1 tmp]# chown cloudera-scm:cloudera-scm /var/www/html/spark2/*
+
+```
+
+**Go to the CM UI / Parcel**
+
+```
+ - Configuration 
+ - URL Remote Parcel 
+ - http://stf-btc-20171030-1.gce.cloudera.com/spark2/
+ - Save
+ - Verify the new parcels
+ - Download / Distribute / Activate SPARK2
+```
+
 
 
