@@ -1,5 +1,5 @@
-**YARN/RM Lab: Tuning for YARN**
-## Running the first initial script
+## YARN/RM Lab: Tuning for YARN
+**Running the first initial script**
 ```
 [root@stf-btc-20171030-1 ~]# sh YARNtest.sh
 Testing loop started on Thu Nov 2 00:27:47 PDT 2017
@@ -86,7 +86,7 @@ Deleted /results/ts-10GB-8-1-1024
 Testing loop ended on Thu Nov 2 00:47:23 PDT 2017
 ```
 
-## Running the new loop with the new properties values
+**Running the new loop with the new properties values**
 
 ```
 
