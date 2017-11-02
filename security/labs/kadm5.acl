@@ -1,0 +1,11 @@
+## > Step 6:
+** Add admin and cloudera-scm to ACL(Access Control List), which gives privilege to add principals for admin and cloudera-scm principal**
+
+```
+vim /var/kerberos/krb5kdc/kadm5.acl
+
+[root@stf-btc-20171030-5 ~]# cat /var/kerberos/krb5kdc/kadm5.acl
+*/admin@STEFUN.COM	*
+cloudera-scm@STEFUN.COM admilc
+```
+
