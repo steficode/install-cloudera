@@ -1,3 +1,4 @@
+**Running all the differents tests in the loop:**
 ```
 #!/bin/sh
 # Confirm the path values given below correspond to your installation
