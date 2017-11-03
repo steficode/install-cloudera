@@ -1,6 +1,6 @@
 ## curl Statements API
 ```
-Define the variables for the CM_Server API
+> **Define the variables for the CM_Server API**
 
 CMS_URL=http://stf-btc-20171030-1.gce.cloudera.com
 CMS_PORT=7180
@@ -9,7 +9,7 @@ CM_USER=sclairville
 CM_PASS=cloudera
 
 
-** > Stop Hive**
+> **Stop Hive**
 
 [root@stf-btc-20171030-1 ~]# curl -X POST -u $CM_USER:$CM_PASS "$CMS_URL:$CMS_PORT/$CMS_PATH_SERVICES/hive/commands/stop"
 {
@@ -27,7 +27,7 @@ CM_PASS=cloudera
 
   The hive Service is correctly **STOPPED** after the double check.
 
-** > Start Hive**
+> **Start Hive**
 
 [root@stf-btc-20171030-1 ~]# curl -X POST -u $CM_USER:$CM_PASS "$CMS_URL:$CMS_PORT/$CMS_PATH_SERVICES/hive/commands/start"
 {
@@ -47,7 +47,7 @@ CM_PASS=cloudera
 The service Hive is correctly **STARTED** after the double check
  
 
-** > Check the status of Hive service**
+> **Check the status of Hive service**
 
 [root@stf-btc-20171030-1 ~]# curl -u $CM_USER:$CM_PASS "$CMS_URL:$CMS_PORT/$CMS_PATH_SERVICES/hive/"| grep --color 'serviceState'
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
