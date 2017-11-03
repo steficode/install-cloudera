@@ -12,10 +12,8 @@ export CM_PASS=cloudera
 ```
 ```
 [root@stf-btc-20171030-1 ~]# cat 2_cluster_deployment.md
-
 ```
-```javascript
-
+```perl
 {
   "timestamp" : "2017-11-03T01:27:26.323Z",
   "clusters" : [ {
