@@ -1,5 +1,5 @@
 ## curl Statements API
-```
+```bash
 > **Define the variables for the CM_Server API**
 
 CMS_URL=http://stf-btc-20171030-1.gce.cloudera.com
