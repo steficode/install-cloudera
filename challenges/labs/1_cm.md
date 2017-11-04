@@ -1,3 +1,4 @@
+* List the command and output for `ls /etc/yum.repos.d` on the second node in `challenges/labs/1_cm.md`
 ```bash
 root@stf-btc-challenge-2 ~]# ls -lart /etc/yum.repos.d/
 total 80
@@ -19,3 +20,5 @@ total 80
 drwxr-xr-x.   2 root root  4096 Nov  3 13:45 .
 drwxr-xr-x. 108 root root 12288 Nov  3 13:52 ..
 ```
+
+
